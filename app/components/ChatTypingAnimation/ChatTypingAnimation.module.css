@@ -1,0 +1,58 @@
+.chatBubble {
+    height: 100%;
+    padding: 0.75rem;
+    -webkit-border-radius: 0.25rem;
+    -webkit-border-bottom-left-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -moz-border-radius-bottomleft: 0.25rem;
+    border-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .typing {
+    align-items: center;
+    display: flex;
+    height: 17px;
+    justify-content: center;
+  }
+
+  .typing .dot {
+    animation: mercuryTypingAnimation 1.8s infinite ease-in-out;
+    background-color: rgb(0 112 80) ;
+    border-radius: 50%;
+    height: 7px;
+    margin-right: 4px;
+    vertical-align: middle;
+    width: 7px;
+    display: inline-block;
+  }
+  .typing .dot:nth-child(1) {
+    animation-delay: 200ms;
+  }
+  .typing .dot:nth-child(2) {
+    animation-delay: 300ms;
+  }
+  .typing .dot:nth-child(3) {
+    animation-delay: 400ms;
+  }
+  .typing .dot:last-child {
+    margin-right: 0;
+  }
+  
+  @keyframes mercuryTypingAnimation {
+    0% {
+      transform: translateY(0px);
+      background-color:rgb(50 172 140);
+    }
+    28% {
+      transform: translateY(-7px);
+      background-color: rgb(40 152 120);; 
+    }
+    44% {
+      transform: translateY(0px);
+      background-color: rgb(20 132 100);
+    }
+  }
