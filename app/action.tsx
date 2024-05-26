@@ -7,12 +7,12 @@ interface RequestDataForAI {
     model: string,
 }
 
-interface aiMessage {
+interface AIMessage {
     role: string,
     content: string
 }
 
-const prompt: aiMessage = {
+const prompt: AIMessage = {
     role: "system",
     content: `You are a customer assistant and you try to suggest the best phone depending on your customer needs (price, battery, photo, operating system....). Here are your sources:
       - https://www.theverge.com/23879726/apple-iphone-15-plus-review
